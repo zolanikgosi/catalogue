@@ -1,0 +1,966 @@
+/*user Log In Page  styles */
+
+/* Login page body styling */
+.login-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    /* Light background color */
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    height: 100vh;
+    /* Full height of the viewport */
+    margin: 0;
+    /* Remove default margin */
+}
+
+/* Login container */
+.login-container {
+    background-color: #ffffff;
+    /* White background for the form */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    width: 300px;
+    /* Fixed width for the form */
+    text-align: center;
+    /* Center align text */
+}
+
+/* Header */
+.login-container h1 {
+    font-size: 24px;
+    color: purple;
+    /* Primary color for the heading */
+    margin-bottom: 20px;
+    /* Space below the heading */
+}
+
+/* Input fields */
+.login-container input[type="text"],
+.login-container input[type="email"],
+/* Added email input */
+.login-container input[type="password"] {
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    /* Padding inside the fields */
+    margin-bottom: 15px;
+    /* Space below each field */
+    border: 1px solid #ccc;
+    /* Light gray border */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 16px;
+    /* Font size */
+}
+
+
+/* Button styles */
+.login-container button {
+    background-color: purple;
+    /* Primary button color */
+    color: white;
+    /* Button text color */
+    padding: 10px;
+    /* Padding for button */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer on hover */
+    font-size: 16px;
+    /* Font size */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+    width: 100%;
+    /* Full width */
+}
+
+/* Button hover effect */
+.login-container button:hover {
+    background-color: purple;
+    /* Darker shade on hover */
+}
+
+/* Link styles */
+.login-container .link {
+    display: block;
+    /* Block display for better click area */
+    margin-top: 15px;
+    /* Space above the link */
+    color: purple;
+    /* Link color */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.login-container .link:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+/* Back to Homepage button */
+.login-container .btn {
+    background-color: #f4f4f4;
+    /* Light gray background */
+    color: purple;
+    /* Primary text color */
+    border: 1px solid purple;
+    /* Border color */
+    margin-top: 10px;
+    /* Space above button */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+.login-container .btn:hover {
+    background-color: purple;
+    /* Darken on hover */
+    color: white;
+    /* Change text color on hover */
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Catalogue Page Styles*/
+
+/* Styling the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: purple;
+    color: white;
+}
+
+table td img {
+    width: 100px;
+    height: 100px;
+}
+
+.add-to-cart-btn {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: purple;
+}
+
+/* Popup and overlay styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    width: 300px;
+    text-align: center;
+}
+
+.popup.active {
+    display: block;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.overlay.active {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Add close button styling */
+.popup button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+/* -----------------------------------------------------------------------------------------*/
+/*user Signup  styles */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f0f9;
+    /* Light lavender background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main Container */
+.signup-page-container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+}
+
+/* Header Styling */
+.signup-header {
+    margin-bottom: 20px;
+}
+
+.signup-logo {
+    margin-bottom: 10px;
+}
+
+.signup-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4b0082;
+    /* Dark Purple */
+}
+
+.signup-description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+}
+
+/* Form Styling */
+.signup-form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-label {
+    display: block;
+    font-size: 14px;
+    color: #4b0082;
+    /* Dark Purple */
+    margin-bottom: 5px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1c4e9;
+    /* Light purple border */
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.input-field:focus {
+    border-color: #7b1fa2;
+    /* Medium Purple */
+    outline: none;
+}
+
+/* Button Styling */
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background-color: #7b1fa2;
+    /* Medium Purple */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #6a1b9a;
+    /* Darker Purple */
+}
+
+.btn-secondary {
+    width: 100%;
+    padding: 12px;
+    background-color: #9575cd;
+    /* Light Purple */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #7e57c2;
+    /* Slightly darker light purple */
+}
+
+/* Existing Account Link */
+.existing-account {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-link {
+    color: #7b1fa2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+/* Account Type Selection */
+.account-type-selection {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.account-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Button Group for Account Types */
+.account-type-button {
+    padding: 12px;
+    background-color: #d1c4e9;
+    /* Lighter Purple */
+    color: #4b0082;
+    /* Dark Purple */
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.account-type-button:hover {
+    background-color: #b39ddb;
+    /* Medium Light Purple */
+}
+
+/* Return Home Button */
+.return-home {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* -----------------------------------------------------------------------------------------*/
+
+/* Homepage Styling */
+
+/* General reset and body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header,
+main,
+footer {
+    width: 100%;
+}
+
+/* Header Styling */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: white;
+    /* Changed to white */
+    color: black;
+    /* Text color changed for better contrast */
+}
+
+.logo-container {
+    flex-basis: 20%;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Makes the links display inline */
+    gap: 30px;
+    /* Adds space between the navigation links */
+}
+
+.top-nav ul li {
+    margin-right: 20px;
+
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    color: #7b1fa2;
+    /* Ensure the links are visible on the white background */
+
+}
+
+/* Welcome Message Styling */
+.welcome-message {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* Main Section Styling */
+main {
+    flex: 1;
+    background-color: #ccc;
+    /* Set main background to light grey */
+    padding: 20px;
+}
+
+.intro-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.featured-items {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.featured-item {
+    text-align: center;
+}
+
+.featured-item img {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Footer Styling */
+.footer-container {
+    background-color: white;
+    /* Changed to white for the footer background */
+    color: black;
+    /* Text color changed for better contrast */
+    padding: 20px 50px;
+    text-align: center;
+
+}
+
+/* Footer Navigation */
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+    display: inline-block;
+
+}
+
+.footer-nav ul li {
+    margin-right: 15px;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: #7b1fa2;
+
+}
+
+/* Footer Info Styling */
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    /* Spreads the footer sections */
+    margin-bottom: 20px;
+}
+
+.contact-info,
+.social-media {
+    text-align: left;
+
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+
+
+/* -----------------------------------------------------------------------------------------*/
+/* About Us Page Styles */
+
+/* Main container styling */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Overview section styling (flex container) */
+#overview {
+    display: flex;
+    flex-wrap: wrap;          /* Allow service boxes to wrap onto new lines if needed */
+    justify-content: space-between;  /* Distribute space evenly between the boxes */
+    gap: 20px;                /* Space between the boxes */
+}
+
+/* Service box styling */
+.service-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 23%;  /* 4 service boxes on one line with space in between */
+    box-sizing: border-box;   /* Include padding and border in the width calculation */
+}
+
+/* Title styling inside each service box */
+.service-box h4 {
+    font-size: 1.4em;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling inside each service box */
+.service-box p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Underline styling for specific text */
+.service-box u {
+    text-decoration: underline;
+}
+
+/* Responsive design: Make boxes stack vertically on smaller screens */
+@media (max-width: 1024px) {
+    .service-box {
+        width: 48%;  /* 2 service boxes per row on medium screens */
+        margin-bottom: 20px;  /* Space between stacked boxes */
+    }
+}
+
+/* On very small screens, make each service box take full width */
+@media (max-width: 768px) {
+    .service-box {
+        width: 100%;  /* 1 service box per row on small screens */
+    }
+}
+
+
+/* -----------------------------------------------------------------------------------------*/
+/* Contact Us Form */
+
+.contact-form {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    
+}
+
+
+
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-form .contact-btn {
+    background-color: #009579;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form .contact-btn:hover {
+    background-color: #006653;
+
+}
+
+/* -----------------------------------------------------------------------------------------*/
+
+/* Cart Page Styles */
+
+/* General container for the cart */
+.cart-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.cart-container h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table styles */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.cart-table th {
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+}
+
+.cart-table td {
+    background-color: #fff;
+}
+
+.cart-table button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cart-table button:hover {
+    background-color: #d32f2f;
+}
+
+/* Cart buttons */
+.cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cart-buttons button {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cart-buttons button:hover {
+    background-color: #45a049;
+}
+
+/* Shipping form styles */
+.shipping-form {
+    margin-top: 20px;
+}
+
+.shipping-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.shipping-form input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Payment section styles */
+h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+select,
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+select:focus,
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Discount code section */
+h3+p {
+    margin-top: 10px;
+}
+
+input[name="discount_code"] {
+    width: calc(100% - 100px);
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button[name="apply_discount"] {
+    background-color: #FF9800;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+button[name="apply_discount"]:hover {
+    background-color: #fb8c00;
+}
+
+/* Cart Summary styles */
+.cart-summary {
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.cart-summary p:last-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Checkout button */
+button[name="checkout"] {
+    background-color: #2196F3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button[name="checkout"]:hover {
+    background-color: #1976D2;
+}
+
+
+/* -----------------------------------------------------------------------------------------*/
+/* User Dashboard Form */
+
+/* Container for the entire dashboard */
+.user-dashboard-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Main content area styling */
+.user-main-content {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section header styling */
+.user-main-content h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Navigation links styling */
+.user-main-content nav {
+    margin-bottom: 30px;
+}
+
+/* Navigation links styling with spacing between them */
+.user-main-content nav a {
+    display: inline-block; /* Changed from inline to inline-block for better control over spacing */
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.user-main-content nav a:last-child {
+    margin-right: 0; /* Remove margin from the last link */
+}
+
+.dash-colour{
+    background-color: purple; 
+    display: inline-block;
+    border-radius: 10px;
+    margin-right: 20px; 
+    width: 200px;
+    text-align: center;
+    
+}
+
+.user-main-content nav a:hover {
+    color: #0056b3;
+}
+
+/* Table styling */
+.user-main-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.user-main-content table th, 
+.user-main-content table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.user-main-content table th {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.user-main-content table td {
+    background-color: #fff;
+}
+
+/* General section styling */
+.user-main-content div {
+    margin-bottom: 30px;
+}
+
+/* Paragraph styling */
+.user-main-content p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+
+/* -----------------------------------------------------------------------------------------*/
